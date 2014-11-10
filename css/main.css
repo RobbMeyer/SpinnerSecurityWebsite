@@ -1,23 +1,54 @@
+/*looking at the picture John drew, I came up with the following pieces*/
+/*basic design - 4 pages, same header and footer on all, consistent background color, 
+consistent shadow and border colors, 50px 'white space' left body margin, 50px 'white space' right body margin */ 
+/* page layouts - 2 column and wide, columns 600px wide */
+/*list color pallet choices and sizes from spec sheet for all sections and components below*/
+/*page sections: header, footer, column1, column2, column small image, center large image*/
+/*section components: headings (1,2,3), 
+logo image w padding, border, margin; 
+centerpic image w padding, border, margin;
+columnpic image w padding, border, margin */
+header {
+	width:100%;
+	height:64px;
+	background-color:#ABC7E9;
+}
+nav {
+	background-color:#68B6FC;
+}
 body {
-	background-repeat: repeat-y;
-	background-image: url("../images/image.png");
-	margin:0;
+	background-repeat: repeat-y; /*do we need this?*/
+	background-image: url("../images/image.png"); /*do we want this?*/
+	margin:0 50 0 50; /*this should add space on the sides*/
 	padding:0;
 	border: solid 1px #000;
 }
 
-#container {
+#column1 {
+	width:600;
+	float:left;
 	background-color: #fff;
-	margin: 0 auto;
+	margin: 0 12 0 0;
 	font-family: sans-serif, Verdana, "Times New Roman";
 	font-weight: bold;
 	font-style: italic;
 }
 
-#table {
-	display: table;
+#column2 {
+	width:600px;
+	float:right;
+	background-color: #fff;
+	margin: 0 0 0 12;
+	font-family: sans-serif, Verdana, "Times New Roman";
+	font-weight: bold;
+	font-style: italic;
 }
 
-#image {
+#centerpic {
+	width:800px;
+	color:#FFE2B5;
+}
+
+#columnpic {
 	float:left;
 	}
